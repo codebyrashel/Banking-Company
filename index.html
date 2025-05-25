@@ -1,15 +1,148 @@
-<!doctype html>
-<html>
+<!DOCTYPE html>
+<html lang="en" class="dark">
+
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="./src/style.css" rel="stylesheet">
+  <!-- Charset & Viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Title & Description -->
+  <title>Welcome to YourBank | Empowering Your Financial Journey</title>
+  <meta name="description"
+    content="At YourBank, we provide comprehensive and personalized banking solutions to help you achieve your financial goals with confidence." />
+
+  <!-- SEO: Keywords (optional) -->
+  <meta name="keywords" content="YourBank, banking, finance, financial solutions, dark theme, tailwindcss, fintech" />
+  <meta name="author" content="YourBank Team" />
+
+  <!-- Open Graph / Facebook -->
+  <meta property="og:title" content="Welcome to YourBank" />
+  <meta property="og:description"
+    content="Empowering your financial journey with modern, secure, and personalized banking solutions." />
+  <meta property="og:image" content="/assets/social-preview.jpg" />
+  <meta property="og:url" content="https://yourbank.com" />
+  <meta property="og:type" content="website" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Welcome to YourBank" />
+  <meta name="twitter:description"
+    content="Empowering your financial journey with modern, secure, and personalized banking solutions." />
+  <meta name="twitter:image" content="/assets/social-preview.jpg" />
+
+  <!-- Favicon -->
+  <link rel="icon" href="./public/favicon.ico" />
+
+  <!-- Google Fonts: Inter -->
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+
+  <!-- Main Styles -->
+  <link href="/src/style.css" rel="stylesheet" />
+
+  <!-- Font Awesome Icon -->
+  <script src="https://kit.fontawesome.com/e36c47ecc8.js" crossorigin="anonymous"></script>
+
+  <!-- Boxicons CSS -->
+  <link href="https://cdn.boxicons.com/fonts/basic/boxicons.min.css" rel="stylesheet" />
+  <!-- <link href='https://cdn.boxicons.com/fonts/brands/boxicons-brands.min.css' rel='stylesheet'> -->
 </head>
-<body>
 
+<body class="bg-[#1A1A1A]">
+  <!-- Header Section -->
+  <div class="absolute top-0 left-0 w-1/2 h-1/2 -z-10">
+    <img src="./public/images/abstract.png" alt="" />
+  </div>
+  <header class="flex items-center justify-between w-[80%] bg-[#1C1C1C] px-5 py-4 rounded-full mx-auto mt-10 mb-20">
+    <div class=""><img src="./public/images/Logo.png" alt="Logo" /></div>
 
-  
+    <!--Mobile Hamburger-Icon-->
+    <div class="md:hidden">
+      <button>
+        <i class="fa-solid fa-bars-staggered text-white text-[2rem]" id="mobile-menu-button"></i>
+      </button>
+    </div>
 
+    <!--Navigation Links-->
+    <nav class="hidden md:flex items-center space-x-6">
+      <a href="#" class="text-white bg-[#262626] px-4 py-2 rounded-full hover:bg-[#4b4b4b] transition">Home</a>
+      <a href="#" class="text-white hover:hover:text-[#747070] transition">Careers</a>
+      <a href="#" class="text-white hover:hover:text-[#747070] transition">About</a>
+      <a href="#" class="text-white hover:hover:text-[#747070] transition">Security</a>
+    </nav>
 
+    <div class="hidden md:flex items-center space-x-4">
+      <a href="#" class="text-white hover:text-[#707474]">Sign Up</a>
+      <a href="#" class="bg-[#CAFF33] px-6 py-2 rounded-full hover:bg-[#707474] transition">Login</a>
+    </div>
+  </header>
+
+  <!--Mobile Navigation Links-->
+  <div class="hidden fixed inset-0 bg-[#191919]/95 z-999 flex flex-col items-center justify-center hidden"
+    id="mobile-menu">
+    <!--Close Icon-->
+    <div class="absolute top-4 right-4" id="close-menu-button">
+      <button>
+        <i class="fa-solid fa-xmark text-white text-[2.5rem]"></i>
+      </button>
+    </div>
+
+    <!--Mobile Nav Links-->
+    <nav class="flex flex-col items-center space-y-6">
+      <a href="#" class="text-white bg-[#262626] px-4 py-2 rounded-full hover:bg-[#4b4b4b] transition">Home</a>
+      <a href="#" class="text-white hover:hover:text-[#747070] transition">Careers</a>
+      <a href="#" class="text-white hover:hover:text-[#747070] transition">About</a>
+      <a href="#" class="text-white hover:hover:text-[#747070] transition">Security</a>
+      <a href="#" class="text-white hover:text-[#707474]">Sign Up</a>
+      <a href="#" class="text-[#1C1C1C] bg-[#CAFF33] px-6 py-2 rounded-full hover:bg-[#707474] transition">Login</a>
+    </nav>
+
+    <!-- <div class="hidden md:flex items-center space-x-4">
+      <a href="#" class="text-white hover:text-[#707474]">Sign Up</a>
+      <a href="#" class="text-[#1C1C1C] bg-[#CAFF33] px-6 py-2 rounded-full hover:bg-[#707474] transition">Login</a>
+    </div> -->
+  </div>
+
+  <!--Main Content-->
+  <main>
+    <section>
+      <!---Left Area--->
+      <div class="flex items-center mb-4 px-4 py-2 rounded-full">
+        <span class="text-white bg-[#262626] flex items-center space-x-1 px-2 rounded-full">
+          <i class="bx bx-badge-check text-[#CAFF33]"></i>
+          <p>No LLC Required, No Credit Check.</p>
+        </span>
+      </div>
+
+      <!--Right Area-->
+      <h1 class="text5x md:text-[4rem] font-bold text-white mb-2 mx-4">Welcome to YourBank <br>Empowering Your <span class="text-[#CAFF33]">Financial Journey</span></h1>
+      <p class="text-gray-300 mb-8">At YourBank, our mission is to provide comprehensive banking solutions that empower individuals and businesses to achieve their financial goals. We are committed to delivering personalized and innovative services that prioritize our customers' needs.</p>
+
+      <button>
+        <a href="#" class="btn-primary">Open Account</a>
+      </button>
+    </section>
+  </main>
+
+  <!-- Mobile Menu JavaScript -->
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      const mobileMenuButton = document.getElementById("mobile-menu-button");
+      const closeMenuButton = document.getElementById("close-menu-button");
+      const mobileMenu = document.getElementById("mobile-menu");
+
+      mobileMenuButton.addEventListener("click", function () {
+        mobileMenu.classList.remove("hidden");
+        mobileMenu.classList.add("flex");
+        document.body.style.overflow = "hidden"; // Prevent scrolling when menu is open
+      });
+
+      closeMenuButton.addEventListener("click", function () {
+        mobileMenu.classList.remove("flex");
+        mobileMenu.classList.add("hidden");
+        document.body.style.overflow = ""; // Re-enable scrolling
+      });
+    });
+  </script>
 </body>
+
 </html>
